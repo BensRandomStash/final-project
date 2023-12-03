@@ -5,7 +5,7 @@ import { useState } from "react"
 export default function Homepage() {
 
     const handleClick = () => {
-        alert("Hi!")
+        alert("Hi!");
     }
 
     const [name, setName] = useState("");
@@ -31,13 +31,13 @@ export default function Homepage() {
                     <Link href='Linkpage'>Contacts</Link>
                 </section>
                 <section>
-                    <h3>Here's some examples to show you what I can do!:</h3>
+                    <h3>Here are some examples to show you what I can do!:</h3>
                     <button onClick={handleClick}>Click me!</button>
                 </section>
                 <section>
                     <form onSubmit={handleSubmit}>
                         <label>
-                            What's your name?
+                            What is your name?
                             <input type="text" placeholder="Enter here." value={name} onChange={handleChange} />
                         </label>
                         <input type="submit" value="Submit" />
